@@ -1,0 +1,47 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                charges   R-squared:                       0.751
+Model:                            OLS   Adj. R-squared:                  0.749
+Method:                 Least Squares   F-statistic:                     500.8
+Date:                Mon, 14 Sep 2026   Prob (F-statistic):               0.00
+Time:                        16:15:38   Log-Likelihood:                -13548.
+No. Observations:                1338   AIC:                         2.711e+04
+Df Residuals:                    1329   BIC:                         2.716e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+==========================================================================================
+                             coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+Intercept              -1.194e+04    987.819    -12.086      0.000   -1.39e+04      -1e+04
+C(sex)[T.male]          -131.3144    332.945     -0.394      0.693    -784.470     521.842
+C(smoker)[T.yes]        2.385e+04    413.153     57.723      0.000     2.3e+04    2.47e+04
+C(region)[T.northwest]  -352.9639    476.276     -0.741      0.459   -1287.298     581.370
+C(region)[T.southeast] -1035.0220    478.692     -2.162      0.031   -1974.097     -95.947
+C(region)[T.southwest]  -960.0510    477.933     -2.009      0.045   -1897.636     -22.466
+age                      256.8564     11.899     21.587      0.000     233.514     280.199
+bmi                      339.1935     28.599     11.860      0.000     283.088     395.298
+children                 475.5005    137.804      3.451      0.001     205.163     745.838
+==============================================================================
+Omnibus:                      300.366   Durbin-Watson:                   2.088
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              718.887
+Skew:                           1.211   Prob(JB):                    7.86e-157
+Kurtosis:                       5.651   Cond. No.                         311.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Jarque-Bera: stat=718.8873, p=7.863e-157
+Omnibus: stat=300.3659, p=5.975e-66
+
+Variance Inflation Factors:
+               feature   VIF
+             Intercept 1.000
+        C(sex)[T.male] 1.009
+      C(smoker)[T.yes] 1.012
+C(region)[T.northwest] 1.519
+C(region)[T.southeast] 1.652
+C(region)[T.southwest] 1.529
+                   age 1.017
+                   bmi 1.107
+              children 1.004

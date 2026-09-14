@@ -1,0 +1,10 @@
+HYPOTHESIS TEST 1 — Smoker vs Non-Smoker Charges
+Test used: Mann-Whitney U test
+statistic=284133.0
+p-value=5.270233444503571e-130
+Decision: Reject H0
+
+HYPOTHESIS TEST 2 — ANOVA (charges across regions)
+F=2.96962669358912
+p-value=0.03089335607049739
+Decision: Reject H0
